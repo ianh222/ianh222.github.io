@@ -51,7 +51,10 @@
 			box.css('left', position);
 			box.text(points);
 			if(position > boardWidth) {
-				position = 0;
+				direction = -1;
+			}
+			if(position < 0) {
+				direction = 1;
 			}
 			};
 
